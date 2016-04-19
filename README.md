@@ -62,4 +62,18 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
  
 https://dashboard.particle.io/user/logs
 
+
+## C
+
+yadwinder singh
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc HDC1000.c -o HDC1000
+```
+Run the c program.
+```cpp
+$>./HDC1000
+```
 #####The code output is the relative humidity and temperature reading in degree celsius and fahrenheit.
