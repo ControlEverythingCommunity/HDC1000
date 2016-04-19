@@ -65,7 +65,6 @@ https://dashboard.particle.io/user/logs
 
 ## C
 
-yadwinder singh
 Download (or git pull) the code in Beaglebone Black.
 
 Compile the c program.
