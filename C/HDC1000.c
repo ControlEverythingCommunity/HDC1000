@@ -53,7 +53,7 @@ void main()
 		printf("Temperature in Fahrenheit is : %.2f F \n", fTemp);
 	}
 
-	// Send humidity measurement command
+	// Send humidity measurement command(0x01)
 	config[0] = 0x01;
 	write(file, config, 2);
 	sleep(1);
