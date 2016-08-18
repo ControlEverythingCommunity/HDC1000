@@ -29,7 +29,7 @@ data0 = i2c.readBytes(0x40, 0x00, 1)
 data1 = i2c.readBytes(0x40, 0x00, 1)
 
 # Convert the data
-temp = (data0 * 256) + data1
+temp = (data0[0] * 256) + data1[0]
 cTemp = (temp / 65536.0) * 165.0 - 40
 fTemp = cTemp * 1.8 + 32
 
@@ -47,7 +47,7 @@ data0 = i2c.readBytes(0x40, 0x00, 1)
 data1 = i2c.readBytes(0x40, 0x00, 1)
 
 # Convert the data
-humidity = (data0 * 256) + data1
+humidity = (data0[0] * 256) + data1[0]
 humidity = (humidity / 65536.0) * 100.0
 
 # Output data to screen
