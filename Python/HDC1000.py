@@ -25,7 +25,7 @@ time.sleep(0.5)
 # Read data back, 2 bytes
 # temp MSB, temp LSB
 data0 = bus.read_byte(0x40)
-data1 = bus.read_byte(0x40)
+data1 = bus.read_byte(0x41)
 
 # Convert the data
 temp = (data0 * 256) + data1
@@ -42,7 +42,7 @@ time.sleep(0.5)
 # Read data back, 2 bytes
 # humidity MSB, humidity LSB
 data0 = bus.read_byte(0x40)
-data1 = bus.read_byte(0x40)
+data1 = bus.read_byte(0x41)
 
 # Convert the data
 humidity = (data0 * 256) + data1
